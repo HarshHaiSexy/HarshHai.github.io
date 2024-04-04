@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWB - Home Page</title>
+
+    <style>
+        body {
+            margin:0;
+            padding:0;
+            height:100%;
+            background-color: #FFFFFF; 
+            color: #FFFFFF;
+        }
+        
+        .web-name{
+            margin-top: 200px;
+            margin-bottom: 0%;
+            padding: 10px 0px 0px 0px;
+            display: block;
+            text-align: center;
+            font-size: 6em;
+        }
+
+        .bottomdiv{
+            clear:both;
+            position:fixed;
+            bottom:0;
+            height: 100%;
+            width:100%;
+            background-color: #aa9d8f;
+            color: #705148;
+            font-size:16px;
+            text-align:center;
+            overflow-y: auto;
+
+            scroll-snap-type: y mandatory;
+        }
+
+        section{
+            height: 100%;
+            place-items: center;
+            scroll-snap-align: start;
+            display: grid;
+
+            scroll-snap-align: start;
+        }
+
+        .bottomdiv section:nth-child(1)
+        {
+            background-color: #FFFFFF;
+        }
+
+        .bottomdiv section:nth-child(2)
+        {
+            background-color: antiquewhite;
+            color: rgb(0, 0, 0);
+        }
+        .options{
+            align-items: center;
+            text-align: center;
+            height: 50vh;
+            width: 30vh;
+            background-color: #705148;
+            color: white;
+            border: 2px solid black;
+            border-radius: 0;
+            border-radius: 20px;
+            display: grid;
+            grid-template-rows: 60% 40%;
+        }
+
+        a{
+            text-decoration: none;
+            color: #705148;
+        }
+
+        .top-bar{
+            display: block;
+            justify-content: right;
+        }
+
+
+    </style>
+
+</head>
+<body style="margin: 0px;">
+
+    <div class="container" style="display: grid;">
+        <div class="bottomdiv">
+
+            <section>
+                <h1 class="web-name"><b>TWB</b></h1>
+                <p style="display: inline-block;">Truck Wale Bhaiya</p>
+            </section>
+
+            <section style=" display: grid; grid-template-rows: 10vh 90vh; padding:0; 
+                height: 100vh;">
+
+                <a href="admin.php">
+                    <div class="top-bar">
+                        Admin
+                    </div>
+                </a>
+
+                <div>
+                    <div style="display: grid;
+                        grid-template-columns: 30vh 30vh; 
+                        column-gap: 12vh;
+                        place-items: center;">
+
+                    <a href="2.login-driver.html">
+                        <div class="options">
+                            <div class="img-logo">
+                                <img style="height: 29.5vh; 
+                                width: 30vh; border-top-left-radius:20px; 
+                                border-top-right-radius: 20px;
+                                border-bottom: 1px solid white;" 
+                                src="logos/1.logo2.png" alt="">
+                            </div>
+                            <div style="font-size: 1.3em;">Click here to register as driver</div>
+                        </div>
+                    </a>
+
+                    <a href="5.profile-page-driver.html">
+                        <div class="options">
+                            <div class="img-logo">
+                                <img src="logos/0.logo.png" alt=""
+                                 style="height: 30vh; 
+                                        border-top-left-radius: 20px;
+                                        border-top-right-radius: 20px;
+                                        border-bottom: 1px solid white;">
+                            </div>
+                            <div style="font-size:1.3em;">Click here to book a &nbsp service </div>
+                        </div>
+                    </a>
+                </div>
+                      
+            </section>
+        </div>
+
+    </div>
+</body>
+</html>
